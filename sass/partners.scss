@@ -1,4 +1,5 @@
 .partners {
+  padding-bottom: 178px;
   background-color: $color-bg;
 }
 
@@ -33,6 +34,7 @@
   label {
     text-align: center;
     flex-basis: 120px;
+    transition: all .2s;
   }
 
   &--charge {
@@ -95,7 +97,11 @@
 
 .partners__block-item {
   flex-basis: 19%;
+  min-height: 300px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
   border-radius: 8px;
 }
@@ -114,4 +120,13 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.partners__block-img {
+  align-self: center;
+  width: 120px;
+}
+
+.partners__block-btn {
+  margin-top: 40px;
 }
