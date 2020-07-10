@@ -46,9 +46,10 @@ body {
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 48px;
   padding: 20px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
 }
 
 img {
@@ -73,12 +74,18 @@ a {
 .button {
   padding: 10px 20px;
   font-family: $f-family;
-  color: #ffffff;
+  color: $color-text;
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
   border: none;
   border-radius: 8px;
-  background-color: $color-primary;
+  background-color: #ffffff;
+  cursor: pointer;
+  
+  &--active {
+    color: #ffffff;
+    background-color: $color-primary;
+  }
 }
 
