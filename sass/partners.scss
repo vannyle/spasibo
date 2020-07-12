@@ -1,10 +1,10 @@
 .partners {
-  padding-bottom: 178px;
+  padding-bottom: 172px;
   background-color: $color-bg;
 }
 
 .partners__wrapper {
-  padding-top: 20px;
+  padding-top: 35px;
 }
 
 .partners__header {
@@ -15,21 +15,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 100px;
+  min-height: 127px;
+  padding-top: 15px;
 }
 
 .partners__cat-item {
+    margin: 0 4px;
+}
 
-  &:not(:last-child) {
-    margin-right: 5px;
-  }
+.partners__cat-btn {
+  padding: 10px 15px;
+  letter-spacing: 0.3px;
 }
 
 .partners__thanks {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 20px 0 60px;
 
   label {
     text-align: center;
@@ -96,7 +99,7 @@
 }
 
 .partners__block-item {
-  flex-basis: 19%;
+  flex-basis: 218px;
   min-height: 300px;
   padding: 20px;
   display: flex;
@@ -107,6 +110,7 @@
 }
 
 .partners__block-header {
+  line-height: 24px;
   text-align: left;
 
   span {
@@ -123,10 +127,15 @@
 }
 
 .partners__block-img {
+  margin: 10px 0 32px;
   align-self: center;
-  width: 120px;
+}
+
+.partners__name {
+  margin-bottom: 7px;
+  font-size: 16px;
 }
 
 .partners__block-btn {
-  margin-top: 40px;
+  margin-top: 42px;
 }

@@ -27,7 +27,13 @@
             </ul>
         </nav>
         <div class="header__options">
-            <span class="header__location">Санкт-Петербург</span>
+            <div class="header__pick-location">
+                <div class="header__location">
+                    <img src="img/geo.svg" width="24" height="24" alt="Геолокация">
+                    <span>Санкт-Петербург</span>
+                </div>
+
+            </div>
             <div class="header__user">
                 <div class="header__search-wrapper">
                     <div class="header__search">
@@ -45,42 +51,40 @@
     <section class="partners">
         <div class="partners__wrapper row">
             <h2 class="partners__header">Партнеры и предложения</h2>
-            <div class="partners__categories">
-                <ul class="partners__cat-list">
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Все партнеры</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Популярные</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Супермаркеты</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Кафе и рестораны</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Такси</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Красота</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button button--active" type="button">Электроника и бытовая
-                            техника
-                        </button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Зоотовары</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">Кино и театр</button>
-                    </li>
-                    <li class="partners__cat-item">
-                        <button class="partners__cat-btn button" type="button">...</button>
-                    </li>
-                </ul>
-            </div>
+            <ul class="partners__cat-list">
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Все партнеры</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Популярные</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Супермаркеты</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Кафе и рестораны</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Такси</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Красота</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button button--active" type="button">Электроника и бытовая
+                        техника
+                    </button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Зоотовары</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">Кино и театр</button>
+                </li>
+                <li class="partners__cat-item">
+                    <button class="partners__cat-btn button" type="button">...</button>
+                </li>
+            </ul>
             <div class="partners__thanks">
                 <input type="checkbox" name="checkbox" id="checkbox" checked>
                 <label class="partners__thanks--charge" for="checkbox">Начисляют спасибо</label>
@@ -190,13 +194,13 @@
                     </div>
                     <div class="discount__wrapper">
                         <ul class="discount__items">
-                            <li class="discount__item">
+                            <li class="discount__item discount__item--percent">
                                 <img src="img/colls6.png" width="120" height="120" srcset="img/colls6@2x.png" alt="">
                             </li>
-                            <li class="discount__item">
+                            <li class="discount__item discount__item--percent">
                                 <img src="img/colls3.png" width="120" height="120" srcset="img/colls3@2x.png" alt="">
                             </li>
-                            <li class="discount__item">
+                            <li class="discount__item discount__item--percent">
                                 <img src="img/colls8.png" width="120" height="120" srcset="img/colls8@2x.png" alt="">
                             </li>
                         </ul>
@@ -245,17 +249,15 @@
     <div class="footer__wrapper row">
         <div class="footer__info">
             <div class="footer__call">
-                <span class="footer__number">900</span>
+                <a href="#" class="footer__number">900</a>
                 <span class="footer__call-details">По России бесплатно</span>
             </div>
-            <div class="footer__logo">
-                <img src="" alt="">
-            </div>
+            <img class="footer__logo" src="img/sberlogo.svg" width="159" height="40" alt="Логотип Сбербанка">
             <span class="footer__copyright">© 1997—2019 ПАО Сбербанк.</span>
         </div>
         <div class="footer__block">
             <nav class="footer__nav">
-                <ul class="header__list">
+                <ul class="footer__list">
                     <li class="footer__item"><a href="#">Купоны и сертификаты</a></li>
                     <li class="footer__item"><a href="#">Впечатления</a></li>
                     <li class="footer__item"><a href="#">Авиабилеты</a></li>
@@ -269,11 +271,35 @@
                 </ul>
             </nav>
             <div class="footer__icons">
+                <div class="footer__market">
+                    <a href="#">
+                        <img src="img/google-play.svg" width="130" height="40" alt="Доступно в Гугл Плей">
+                    </a>
+                    <a href="#">
+                        <img src="img/app-store.svg" width="130" height="40" alt="Загрузите в Апп Стор">
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a class="footer__icon" href="#">
+                        <span class="visually-hidden">Одноклассники</span>
+                        <img src="img/ok.svg" width="40" height="40" alt="Логотип Одноклассники">
+                    </a>
+                    <a class="footer__icon" href="#">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <img src="img/fb.svg" width="40" height="40" alt="Логотип Фейсбук">
+                    </a>
+                    <a class="footer__icon" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <img src="img/vk.svg" width="40" height="40" alt="Логотип Вконтакте">
+                    </a>
+                    <a class="footer__icon" href="#">
+                        <span class="visually-hidden">Инстаграм</span>
+                        <img src="img/inst.svg" width="40" height="40" alt="Логотип Инстаграм">
+                    </a>
+                </div>
+            </div>
+            <span class="footer__policy">Политика АО «ЦПЛ» в отношении обработки персональных данных и Согласие на обработку данных участника Программы «Спасибо от Сбербанка»</span>
 
-            </div>
-            <div class="footer__policy">
-                <span>Политика АО «ЦПЛ» в отношении обработки персональных данных и Согласие на обработку данных участника Программы «Спасибо от Сбербанка»</span>
-            </div>
         </div>
     </div>
 </footer>

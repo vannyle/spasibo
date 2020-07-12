@@ -1,5 +1,18 @@
 .footer__wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  min-height: 300px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: $color-grey-text;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .footer__call {
@@ -7,7 +20,73 @@
   flex-direction: column;
 }
 
+.footer__number {
+  color: $color-text;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.footer__logo {
+  margin-top: 30px;
+}
+
+.footer__copyright {
+  margin-bottom: 18px;
+}
+
 .footer__block {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 873px;
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;;
+}
+
+.footer__item {
+  margin-top: 8px;
+  margin-bottom: 16px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  a {
+    letter-spacing: 0.1px;
+  }
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -6px;
+}
+
+.footer__market {
+
+  a:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.footer__icon {
+
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+.footer__policy {
+  line-height: 18px;
+  font-size: 14px;
+  color: $color-grey-text;
+  letter-spacing: 0.1px;
 }
