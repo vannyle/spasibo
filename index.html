@@ -12,7 +12,7 @@
         <div class="header__logo">
             <img src="img/logo.svg" width="180" height="80" alt="Логотип Спасибо">
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav header__nav--close">
             <ul class="header__list">
                 <li class="header__item"><a href="#">Купоны и сертификаты</a></li>
                 <li class="header__item"><a href="#">Впечатления</a></li>
@@ -25,26 +25,38 @@
                 <li class="header__item"><a href="#">Как подключиться</a></li>
                 <li class="header__item header__item--active"><a href="#">Партнеры</a></li>
             </ul>
-        </nav>
-        <div class="header__options">
-            <div class="header__pick-location">
+            <div class="header__options">
                 <div class="header__location">
                     <img src="img/geo.svg" width="24" height="24" alt="Геолокация">
                     <span>Санкт-Петербург</span>
-                </div>
-
-            </div>
-            <div class="header__user">
-                <div class="header__search-wrapper">
-                    <div class="header__search">
-                        <input type="search" id="search" name="search" placeholder="Поиск">
-                        <span></span>
-                        <span></span>
+                    <div class="header__location-modal">
+                        <p class="header__confirm">Ваш город &ndash; <b>Санкт-Петебург</b>?</p>
+                        <div class="header__location-btn">
+                            <button class="header__btn header__btn--active button button--active" type="button">Да
+                            </button>
+                            <button class="header__btn button" type="button">Сменить город</button>
+                        </div>
                     </div>
                 </div>
                 <button class="header__btn button" type="button">Войти</button>
             </div>
+        </nav>
+        <div class="header__search-wrapper">
+            <div class="header__search">
+                <input class="header__search-input" type="search" id="search" name="search" placeholder="Поиск">
+                <div class="header__search-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
+        <button class="header__toggle header__toggle--close header__toggle--nojs" type="button"
+                aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
     </div>
 </header>
 <main>
@@ -299,9 +311,9 @@
                 </div>
             </div>
             <span class="footer__policy">Политика АО «ЦПЛ» в отношении обработки персональных данных и Согласие на обработку данных участника Программы «Спасибо от Сбербанка»</span>
-
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

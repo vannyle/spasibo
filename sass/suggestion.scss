@@ -1,12 +1,15 @@
 .suggestion {
   margin-top: 101px;
   text-align: center;
+
+  @media (max-width: $bp-second) {
+    margin-top: 70px;
+  }
 }
 
 .suggestion__header {
   max-width: 720px;
   font-size: 32px;
-  line-height: 40px;
   margin: 0 auto;
 }
 
@@ -15,10 +18,19 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
+
+  @media (max-width: $bp-third) {
+    justify-content: space-evenly;
+  }
 }
 
 .suggestion__item {
   flex-basis: 32%;
+
+  @media (max-width: $bp-third) {
+    flex-basis: 47%;
+    margin-bottom: 20px;
+  }
 }
 
 .suggestion__details {

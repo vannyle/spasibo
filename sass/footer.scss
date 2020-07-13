@@ -1,8 +1,14 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
   min-height: 300px;
+
+  @media (max-width: $bp-first) {
+    flex-direction: column;
+  }
 }
 
 .footer__info {
@@ -13,6 +19,11 @@
   color: $color-grey-text;
   font-size: 14px;
   line-height: 18px;
+
+  @media (max-width: $bp-first) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
 
 .footer__call {
@@ -40,11 +51,21 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 873px;
+
+  @media (max-width: $bp-first) {
+    margin-top: 20px;
+    flex-basis: auto;
+    padding: 0 30px;
+  }
 }
 
 .footer__list {
   display: flex;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
+
+  @media (max-width: $bp-first) {
+    justify-content: center;
+  }
 }
 
 .footer__item {
@@ -57,6 +78,10 @@
 
   a {
     letter-spacing: 0.1px;
+
+    &:hover {
+      color: $color-grey-text;
+    }
   }
 }
 
@@ -64,6 +89,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: -6px;
+
+  @media (max-width: $bp-first) {
+    margin: 20px 0;
+  }
 }
 
 .footer__market {

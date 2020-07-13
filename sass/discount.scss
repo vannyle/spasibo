@@ -1,5 +1,9 @@
 .discount {
   margin-top: 122px;
+
+  @media (max-width: $bp-second) {
+    margin-top: 100px;
+  }
 }
 
 .discount__list {
