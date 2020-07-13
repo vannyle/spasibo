@@ -9,6 +9,10 @@
   @media (max-width: $bp-first) {
     flex-direction: column;
   }
+
+  @media (max-width: $bp-third) {
+    position: relative;
+  }
 }
 
 .footer__info {
@@ -44,6 +48,15 @@
 
 .footer__copyright {
   margin-bottom: 18px;
+
+  @media (max-width: $bp-third) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+    border-top: 1px solid $color-grey-text;
+  }
 }
 
 .footer__block {
@@ -118,4 +131,8 @@
   font-size: 14px;
   color: $color-grey-text;
   letter-spacing: 0.1px;
+
+  @media (max-width: $bp-third) {
+    margin-bottom: 20px;
+  }
 }
