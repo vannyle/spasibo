@@ -13,6 +13,10 @@
     @media (max-width: $bp-third) {
       max-width: 80%;
     }
+
+    @media (max-width: $bp-fourth) {
+      max-width: 60%;
+    }
   }
 }
 
@@ -183,6 +187,10 @@
   @media (max-width: $bp-third) {
     bottom: 24px;
   }
+
+  @media (max-width: $bp-fourth) {
+    bottom: 15px;
+  }
 }
 
 .header__search {
@@ -341,8 +349,12 @@
 
 }
 
-@media (max-width: $bp-third) {
-  .header__toggle--open {
+.header__toggle--open {
+  @media (max-width: $bp-third) {
     top: 34px;
+  }
+
+  @media (max-width: $bp-fourth) {
+    top: 25px;
   }
 }

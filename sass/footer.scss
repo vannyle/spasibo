@@ -28,6 +28,10 @@
     flex-direction: row;
     align-items: flex-end;
   }
+
+  @media (max-width: $bp-third) {
+    align-items: center;
+  }
 }
 
 .footer__call {
@@ -44,6 +48,10 @@
 
 .footer__logo {
   margin-top: 30px;
+
+  @media (max-width: $bp-third) {
+    margin-top: 0;
+  }
 }
 
 .footer__copyright {
@@ -96,6 +104,10 @@
       color: $color-grey-text;
     }
   }
+
+  @media (max-width: $bp-third) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__icons {
@@ -105,6 +117,11 @@
 
   @media (max-width: $bp-first) {
     margin: 20px 0;
+  }
+
+  @media (max-width: $bp-third) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

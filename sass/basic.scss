@@ -74,6 +74,10 @@ h2 {
   @media (max-width: $bp-third) {
     font-size: 36px;
   }
+
+  @media (max-width: $bp-fourth) {
+    font-size: 28px;
+  }
 }
 
 img {

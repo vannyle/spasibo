@@ -1,0 +1,107 @@
+.address__header {
+  position: relative;
+  padding: 67px 0;
+  margin-left: 85px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background-image: url("img/apple.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.address__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+
+  @media (max-width: $bp-first) {
+    justify-content: space-around;
+  }
+}
+
+.address__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 376px;
+  min-height: 200px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px dashed #000000;
+
+  &--active {
+    border: 1px solid $color-primary;
+  }
+
+  @media (max-width: $bp-first) {
+    margin-bottom: 20px;
+  }
+}
+
+.address__details {
+  position: relative;
+  margin-left: 44px;
+  line-height: 28px;
+
+  & > * {
+    display: inline-block;
+  }
+
+  a {
+    line-height: 21px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 43.5px;
+    top: 0;
+    left: -44px;
+    background-image: url("img/apple-ellipse.svg");
+  }
+  
+  &--active::before {
+    height: 30px;
+    background-image: url("img/apple-s.svg");
+  }
+}
+
+.address__metro {
+  display: flex;
+
+  span {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+
+.address__metro-icon {
+  margin-right: 5px;
+}
+
+.address__direction {
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey-text;
+  border-bottom: 1px solid $color-grey;
+}
+
+.address__map {
+  max-width: 100%;
+  min-height: 380px;
+}

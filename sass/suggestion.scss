@@ -11,6 +11,14 @@
   max-width: 720px;
   font-size: 32px;
   margin: 0 auto;
+
+  @media (max-width: $bp-second) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $bp-fourth) {
+    font-size: 24px;
+  }
 }
 
 .suggestion__list {
@@ -30,6 +38,10 @@
   @media (max-width: $bp-third) {
     flex-basis: 47%;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $bp-fourth) {
+    flex-basis: 80%;
   }
 }
 
